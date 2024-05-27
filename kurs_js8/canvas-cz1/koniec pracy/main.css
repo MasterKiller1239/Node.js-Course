@@ -1,0 +1,96 @@
+body {
+	background-color: #111;
+	color: #efefef;	
+}
+
+h1 {
+	font-size: 54px;
+	color: orange;
+	margin: 25px 0;
+	text-align: center;
+	letter-spacing: 16px;
+	text-transform: uppercase;
+}
+
+.board {
+	width: 800px;
+	height: 480px;
+	margin: 20px auto;
+}
+
+#game_canvas {
+	background-color: black;
+	width: 800px;
+	height: 480px;
+	border: 2px solid orange;
+}
+
+.comment
+{
+	margin: 25px auto;
+	width: 800px;
+	text-align: center;
+	font-size: 24px;
+	color: orange;
+}
+
+.controls
+{
+	margin: 0 auto;
+	width: 650px;
+	text-align: center;
+	clear: both;
+}
+
+.controls button {
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+	margin: 5px 5px;
+	border: 1px solid black;
+	font-size: 14px;
+	float: left;
+}
+
+.controls #delete {
+	background-color: #111;
+	color: #666;
+	border: 1px solid #666;
+}
+
+#help {
+	font-size: 20px;
+	letter-spacing: 5px;
+	color: #666;
+}
+
+#help:hover {
+	color: orange;
+	cursor: pointer;
+}
+
+.help {
+	display: none;	
+	position: absolute;
+	width: 800px;
+	height: 600px;
+	background-color: black;
+	border: 2px solid orange;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 10px 30px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#closehelp {
+	position: relative;
+	left: 350px;
+	color: orange;
+}
+
+#closehelp:hover {
+	color: white;
+	cursor: pointer;
+}

@@ -83,7 +83,7 @@ function start()
 String.prototype.ustawZnak = function(miejsce, znak)
 {
 	if (miejsce > this.length - 1) return this.toString();
-	else return this.substr(0, miejsce) + znak + this.substr(miejsce+1);
+	else return this.substring(0, miejsce) + znak + this.substring(miejsce+1);
 }
 
 

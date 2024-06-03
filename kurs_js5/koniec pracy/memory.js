@@ -4,7 +4,7 @@ var cards = ["ciri.png", "geralt.png", "jaskier.png", "jaskier.png", "iorweth.pn
 //alert(cards[4]);
 
 //console.log(cards);
-
+cards = shuffle(cards);
 var c0 = document.getElementById('c0');
 var c1 = document.getElementById('c1');
 var c2 = document.getElementById('c2');
@@ -40,6 +40,14 @@ var turnCounter = 0;
 var visible_nr;
 var lock = false;
 var pairsLeft = 6;
+
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
 
 function revealCard(nr)
 {
@@ -104,6 +112,7 @@ function hide2Cards(nr1, nr2)
 	if(pairsLeft == 0)
 	{
 		$('.board').html('<h1>You win!<br>Done in '+turnCounter+' turns</h1>');
+		cards = shuffle(cards);
 	}
 	
 	lock = false;
